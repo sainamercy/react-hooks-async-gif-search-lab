@@ -11,8 +11,11 @@ function GifSearch({onSubmitForm}){
         setSearch(e.target.value)
     }
     return<form onSubmit={handleSubmit}>
-        <input onChange={handleChange} value={search}></input>
-        <button type="submit">submit</button>
+      <label>
+        <p>Enter a Search Term:</p>
+      <input onChange={handleChange} value={search}></input>
+      </label>
+        <button type="submit">Find Gifs</button>
     </form>
 }
 
